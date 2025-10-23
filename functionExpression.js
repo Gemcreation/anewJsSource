@@ -1,25 +1,15 @@
+let hello = 0;
 function sayHello() {
-    console.log("Hello World!");
+    setTimeout( function () {
+        console.log("Hello World! " + hello++);
+        sayHello();
+    }, 2000);
 }
 
 sayHello();
 
-function sayGreetings(name) {
-    console.log("==================");
-    console.log("Good morning " + name + "!");
-    console.log("==================");
-}
 
-sayGreetings("Gem");
-sayGreetings("Ibrahim");
-sayGreetings("Kolwole");
-
-// return keyword function to return something in a function
-function calculateTax(amount) {
-    let result = amount * 0.0825;
-    
-    return result;
-}
-
-let tax = calculateTax(100);
-console.log(tax);
+// below is what we called IIFE immediately invoke function expression
+(function () {
+    console.log('I\'m here');
+}) ();
