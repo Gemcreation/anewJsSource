@@ -18,3 +18,13 @@ function meal() {
     }, 2000);
 }
 meal();
+
+let w = 3;
+while (w < 17) {
+    console.log(w++);
+
+    if(w == 10){
+        console.log("I'm breaking");
+        break;
+    }
+}
