@@ -10,3 +10,9 @@ let myCar = {
     }
 }
 myCar.getDescription();
+
+// other methid we can use to access the element in object apart from the period i.e the . "dot"
+// the use of the square baraket [] and the element name will be in a string, as seen below
+console.log(myCar["year"]);
+// the use of the square baraket and the numeric position of the element inside the object, as below
+console.log(myCar[3]);
