@@ -6,3 +6,9 @@ let fibonacci = [1, 1, 2, 3, 5, 8, 13, 23, 34, 35];
 let combine = fibonacci.concat(lost);
 console.log(combine);
 console.log(combine.join("-"));
+
+let filtered = combine.filter( (x) => {
+    if(x <= 15);
+    return x;
+});
+console.log(filtered);
