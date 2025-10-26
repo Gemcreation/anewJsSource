@@ -8,7 +8,7 @@ console.log(combine);
 console.log(combine.join("-"));
 
 let filtered = combine.filter( (x) => {
-    if(x <= 15);
+    if(x <= 10);
     return x;
 });
 console.log(filtered);
